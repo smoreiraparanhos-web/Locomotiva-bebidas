@@ -4,9 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Locomotiva · Destilados premium</title>
-<meta name="description" content="Destilados premium Locomotiva: whisky de malte envelhecido em carvalho, defumado de barril queimado e barril único engarrafado à mão. Conheça a coleção, os coquetéis e as histórias da destilaria.">
-<meta name="theme-color" content="#0b0a09">
-<meta name="color-scheme" content="dark">
+<meta name="description" content="Destilados premium Locomotiva: Caldeira, Fornalha e Noturno. Veja a dose sendo servida, conheça a coleção, os coquetéis da casa e os kits para presente.">
+<meta name="theme-color" content="#7a1218">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Locomotiva">
@@ -17,8 +16,8 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/slide-caldeira.webp" imagesrcset="img/slide-caldeira-m.webp 1100w, img/slide-caldeira.webp 2200w" imagesizes="100vw" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/servir/00.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/styles.css">
 <script>document.documentElement.classList.add('js');</script>
 <script type="module" src="js/main.js"></script>
@@ -27,263 +26,330 @@
 
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-<!-- Ícones (traço dourado) -->
 <svg class="oculto" aria-hidden="true" focusable="false">
-  <symbol id="i-roda" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="20" cy="20" r="17"/><circle cx="20" cy="20" r="14.5"/><circle cx="20" cy="20" r="3.6" fill="currentColor"/><path d="M20 7V16M20 24V33M7 20H16M24 20H33M10.8 10.8L17 17M23 23L29.2 29.2M29.2 10.8L23 17M17 23L10.8 29.2"/></g></symbol>
-  <symbol id="i-brasao" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M32 4L54 12V30C54 44 44 54 32 60C20 54 10 44 10 30V12Z"/><path d="M32 9L49 15.5V30C49 41.5 41 50 32 55C23 50 15 41.5 15 30V15.5Z" stroke-width="1"/><path d="M20 4.5L24 1.5L28 4.5L32 1L36 4.5L40 1.5L44 4.5" stroke-linecap="round"/></g><g transform="translate(19 17) scale(.65)"><use href="#i-roda"/></g></symbol>
-  <symbol id="i-premium" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M16 3L26 7V15C26 22 21 27 16 29C11 27 6 22 6 15V7Z"/><path d="M16 10L17.8 13.7L21.8 14.2L18.9 17L19.6 21L16 19.1L12.4 21L13.1 17L10.2 14.2L14.2 13.7Z"/></g></symbol>
-  <symbol id="i-receita" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M16 8C12.5 5.8 8 5.5 4 6.5V25C8 24 12.5 24.3 16 26.5C19.5 24.3 24 24 28 25V6.5C24 5.5 19.5 5.8 16 8Z"/><path d="M16 8V26.5M7.5 11C9.5 10.7 11.5 11 13 11.7M7.5 15C9.5 14.7 11.5 15 13 15.7M19 11.7C20.5 11 22.5 10.7 24.5 11M19 15.7C20.5 15 22.5 14.7 24.5 15"/></g></symbol>
-  <symbol id="i-barril" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.3"><path d="M9 4H23C25.5 9 25.5 23 23 28H9C6.5 23 6.5 9 9 4Z"/><path d="M7.6 10H24.4M7.6 22H24.4M12.5 4C11.5 9 11.5 23 12.5 28M19.5 4C20.5 9 20.5 23 19.5 28"/></g></symbol>
-  <symbol id="i-folha" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M16 29V9"/><path d="M16 9C14 6 14 4 16 2C18 4 18 6 16 9Z"/><path d="M16 15C13 14 11.5 12 11.5 9.5C14.5 9.5 16 11.5 16 15ZM16 15C19 14 20.5 12 20.5 9.5C17.5 9.5 16 11.5 16 15Z"/><path d="M16 21C13 20 11.5 18 11.5 15.5C14.5 15.5 16 17.5 16 21ZM16 21C19 20 20.5 18 20.5 15.5C17.5 15.5 16 17.5 16 21Z"/></g></symbol>
-  <symbol id="i-diamante" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M9 5H23L29 12L16 28L3 12Z"/><path d="M3 12H29M12 5L10 12L16 28L22 12L20 5M10 12L16 5L22 12"/></g></symbol>
-  <symbol id="i-seta" viewBox="0 0 16 16"><path d="M1 8H14M9 3L14 8L9 13" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-play" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.6" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8.2 6.6L13.6 10L8.2 13.4Z" fill="currentColor"/></symbol>
-  <symbol id="i-ramo" viewBox="0 0 28 16"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1 14C8 13 15 9 22 2"/><path d="M8 12.4C7 9.8 8 7.6 10.6 6.8C11 9.2 10.2 11.2 8 12.4ZM13.6 9.6C13 7 14.4 5 17 4.6C17.2 7 16 8.8 13.6 9.6ZM18.6 5.6C18.4 3.4 19.8 1.8 22 1.4C22 3.6 20.8 5 18.6 5.6Z"/></g></symbol>
+  <symbol id="i-roda" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="20" cy="20" r="17"/><circle cx="20" cy="20" r="3.6" fill="currentColor"/><path d="M20 7V16M20 24V33M7 20H16M24 20H33M10.8 10.8L17 17M23 23L29.2 29.2M29.2 10.8L23 17M17 23L10.8 29.2"/></g></symbol>
+  <symbol id="i-seta" viewBox="0 0 16 16"><path d="M1 8H14M9 3L14 8L9 13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-gelo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M16 3L27 9V22L16 29L5 22V9Z"/><path d="M5 9L16 15L27 9M16 15V29"/><path d="M9 12.5L12 14.2M20.5 14L23 12.6" stroke-linecap="round" opacity=".6"/></g></symbol>
+  <symbol id="i-dose" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M7 8H25L23 27H9Z"/><path d="M8 15H24" /><path d="M8.6 15L9.6 26H22.4L23.4 15Z" fill="currentColor" opacity=".25"/><path d="M14 4C14 6 16 6 16 8M18 3C18 5 20 5 20 7" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-citrico" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="9"/><path d="M16 7V25M7 16H25M9.6 9.6L22.4 22.4M22.4 9.6L9.6 22.4" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-brinde" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9L12 7L13.5 14C14 16.5 12.5 18.5 10.5 19C8.5 19.5 6.5 18 6 16Z"/><path d="M10.5 19L12 27M9 27.5L15 26"/><path d="M27 9L20 7L18.5 14C18 16.5 19.5 18.5 21.5 19C23.5 19.5 25.5 18 26 16Z"/><path d="M21.5 19L20 27M23 27.5L17 26"/><path d="M14 3L15 5M18 3L17 5M16 2V4.5"/></g></symbol>
+  <symbol id="i-barril" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 4H23C25.5 9 25.5 23 23 28H9C6.5 23 6.5 9 9 4Z"/><path d="M7.6 10H24.4M7.6 22H24.4M12.5 4C11.5 9 11.5 23 12.5 28M19.5 4C20.5 9 20.5 23 19.5 28"/></g></symbol>
+  <symbol id="i-folha" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 26C10 16 17 9 27 5C25 16 18 24 6 26Z"/><path d="M6 26L19 13"/></g></symbol>
+  <symbol id="i-chama" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M16 29C10.5 29 7 25 7 20C7 14 13 11 13 4C17 7 20 10 20 14C21.5 13 22 11.5 22 10C24.5 12.5 25 16 25 20C25 25 21.5 29 16 29Z"/><path d="M16 29C13.5 29 12 27 12 24.5C12 21.5 15 20 15 17C17.5 19 20 21 20 24.5C20 27 18.5 29 16 29Z"/></g></symbol>
+  <symbol id="i-presente" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="5" y="12" width="22" height="16" rx="2"/><rect x="3.5" y="8" width="25" height="5" rx="1.5"/><path d="M16 8V28"/><path d="M16 8C13 3 8 4 9.5 7C10.5 8.5 16 8 16 8ZM16 8C19 3 24 4 22.5 7C21.5 8.5 16 8 16 8Z"/></g></symbol>
+  <symbol id="onda" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30C120 8 240 8 360 26C480 44 600 52 720 38C840 24 960 6 1080 12C1200 18 1320 40 1440 32V60H0Z" fill="currentColor"/></symbol>
 </svg>
 
 <header class="topo">
-  <a class="marca" href="#inicio" aria-label="Locomotiva, início">
-    <svg class="marca__brasao" width="38" height="38" aria-hidden="true"><use href="#i-brasao"/></svg>
-    <span class="marca__nome">Locomotiva<small>Destilaria</small></span>
-  </a>
-  <nav class="nav" id="nav" aria-label="Principal">
-    <a href="#colecao">Coleção</a>
-    <a href="#heranca">Nossa história</a>
-    <a href="#categorias">Categorias</a>
-    <a href="#coqueteis">Coquetéis</a>
-    <a href="#historias">Histórias</a>
-  </nav>
-  <a class="botao botao--contorno botao--p topo__cta" href="#" data-whats="Olá! Vim pelo site da Locomotiva e quero saber mais sobre os destilados.">Fale conosco</a>
-  <button class="topo__menu" type="button" aria-expanded="false" aria-controls="nav"><span></span><span></span><span class="sr">Abrir menu</span></button>
+  <div class="topo__barra">
+    <a class="marca" href="#inicio" aria-label="Locomotiva, início">
+      <svg width="30" height="30" aria-hidden="true"><use href="#i-roda"/></svg>
+      <span>Locomotiva</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#colecao">Coleção</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#drinks">Drinks</a>
+      <a href="#historia">História</a>
+      <a href="#presentes">Presentes</a>
+    </nav>
+    <a class="botao botao--vermelho botao--p topo__cta" href="#" data-whats="Olá! Vim pelo site da Locomotiva e quero saber mais sobre os destilados.">Fale conosco</a>
+    <button class="topo__menu" type="button" aria-expanded="false" aria-controls="nav"><span></span><span></span><span class="sr">Abrir menu</span></button>
+  </div>
 </header>
 
 <main id="conteudo">
 
-  <!-- ABERTURA -->
-  <section class="hero" id="inicio" aria-roledescription="carrossel" aria-label="Destaques">
-    <div class="hero__slides">
-      <article class="slide ativo" id="slide-1" aria-roledescription="slide" aria-label="1 de 3">
-        <img class="slide__foto" src="img/slide-caldeira.webp" srcset="img/slide-caldeira-m.webp 1100w, img/slide-caldeira.webp 2200w" sizes="100vw" width="2200" height="1240" alt="Garrafa Locomotiva Caldeira sobre mesa de carvalho, ao lado de um copo com gelo e rodela de laranja." fetchpriority="high">
-        <div class="slide__texto">
-          <h1 class="hero__titulo">Feito para momentos.<br>Pensado para ser <em>lembrado.</em></h1>
-          <p class="sobre"><span class="sobre__traco"></span><svg width="26" height="15" aria-hidden="true"><use href="#i-ramo"/></svg>Destilados e licores premium</p>
-          <p class="hero__apoio">A Locomotiva celebra tradição, fogo e paciência. Cada garrafa nasce para reunir pessoas e transformar uma noite comum em lembrança.</p>
-          <div class="hero__acoes">
-            <a class="botao botao--ouro" href="#colecao">Explorar coleção <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></a>
-            <a class="botao botao--contorno" href="#heranca">Nossa história <svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></a>
-          </div>
-        </div>
-      </article>
-      <article class="slide" id="slide-2" aria-roledescription="slide" aria-label="2 de 3" aria-hidden="true">
-        <img class="slide__foto" src="img/slide-fornalha.webp" srcset="img/slide-fornalha-m.webp 1100w, img/slide-fornalha.webp 2200w" sizes="100vw" width="2200" height="1240" alt="Garrafa Locomotiva Fornalha de vidro escuro recortada por luz vermelha, com copo de gelo ao lado." loading="lazy">
-        <div class="slide__texto">
-          <p class="hero__titulo" role="heading" aria-level="2">O fogo marca.<br>O sabor <em>permanece.</em></p>
-          <p class="sobre"><span class="sobre__traco"></span><svg width="26" height="15" aria-hidden="true"><use href="#i-ramo"/></svg>Novo · Fornalha defumado</p>
-          <p class="hero__apoio">Barril queimado por dentro, turfa e cacau amargo. Um defumado seco, de final longo, para quem gosta de intensidade.</p>
-          <div class="hero__acoes">
-            <button class="botao botao--ouro" type="button" data-produto="fornalha">Conhecer a Fornalha <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></button>
-            <a class="botao botao--contorno" href="#coqueteis">Ver coquetéis <svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></a>
-          </div>
-        </div>
-      </article>
-      <article class="slide" id="slide-3" aria-roledescription="slide" aria-label="3 de 3" aria-hidden="true">
-        <img class="slide__foto" src="img/slide-noturno.webp" srcset="img/slide-noturno-m.webp 1100w, img/slide-noturno.webp 2200w" sizes="100vw" width="2200" height="1240" alt="Garrafa Locomotiva Noturno com rótulo creme e taça de destilado dourado sob luz fria." loading="lazy">
-        <div class="slide__texto">
-          <p class="hero__titulo" role="heading" aria-level="2">Noites longas.<br>Conversas <em>melhores.</em></p>
-          <p class="sobre"><span class="sobre__traco"></span><svg width="26" height="15" aria-hidden="true"><use href="#i-ramo"/></svg>Barril único · Noturno</p>
-          <p class="hero__apoio">Engarrafado à mão, um barril por vez. Mel, baunilha e pera madura para a última dose da mesa.</p>
-          <div class="hero__acoes">
-            <button class="botao botao--ouro" type="button" data-produto="noturno">Conhecer o Noturno <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></button>
-            <a class="botao botao--contorno" href="#categorias">Kits para presente <svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></a>
-          </div>
-        </div>
-      </article>
+  <!-- 1. ABERTURA: a dose sendo servida conforme a rolagem -->
+  <section class="servir" id="inicio" aria-labelledby="servir-titulo">
+    <div class="servir__palco">
+      <img class="flutua flutua--gelo1" data-flutua="-0.35" src="img/dec/gelo.webp" width="285" height="300" alt="" aria-hidden="true">
+      <img class="flutua flutua--laranja1" data-flutua="0.25" src="img/dec/laranja.webp" width="297" height="300" alt="" aria-hidden="true">
+      <img class="flutua flutua--folha1" data-flutua="-0.2" src="img/dec/folha.webp" width="163" height="300" alt="" aria-hidden="true">
+      <div class="bolhas" data-flutua="-0.5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <div class="servir__texto">
+        <p class="selo-texto">Destilados premium · Nº 01 Caldeira</p>
+        <h1 class="servir__titulo" id="servir-titulo">Feito para momentos. <br>Pensado para ser <em>lembrado.</em></h1>
+        <ol class="passos" aria-label="Como servir">
+          <li data-passo="0"><svg width="18" height="18" aria-hidden="true"><use href="#i-gelo"/></svg>Gelo</li>
+          <li data-passo="1"><svg width="18" height="18" aria-hidden="true"><use href="#i-dose"/></svg>Dose</li>
+          <li data-passo="2"><svg width="18" height="18" aria-hidden="true"><use href="#i-brinde"/></svg>Brinde</li>
+        </ol>
+        <a class="botao botao--creme" href="#colecao">Conhecer a coleção <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></a>
+      </div>
+
+      <figure class="servir__cena">
+        <canvas width="720" height="760" aria-hidden="true"></canvas>
+        <img class="servir__primeiro" src="img/servir/00.webp" width="720" height="760" alt="Garrafa Locomotiva Caldeira que, ao rolar a página, se inclina e serve whisky em um copo com gelo." fetchpriority="high">
+      </figure>
+      <p class="servir__dica" aria-hidden="true">Role para servir</p>
     </div>
-    <div class="hero__trilho" role="tablist" aria-label="Escolher destaque">
-      <button type="button" role="tab" aria-selected="true" aria-controls="slide-1">01</button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="slide-2">02</button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="slide-3">03</button>
-    </div>
-    <a class="hero__rolar" href="#diferenciais"><span>Role</span><i aria-hidden="true"></i></a>
   </section>
 
-  <!-- DIFERENCIAIS -->
-  <section class="diferenciais" id="diferenciais" aria-label="Diferenciais">
-    <ul>
-      <li class="revela"><svg width="34" height="34" aria-hidden="true"><use href="#i-premium"/></svg><strong>Destilados premium</strong><span>Malte e carvalho selecionados</span></li>
-      <li class="revela"><svg width="34" height="34" aria-hidden="true"><use href="#i-receita"/></svg><strong>Receita de tradição</strong><span>O sabor de antigamente</span></li>
-      <li class="revela"><svg width="34" height="34" aria-hidden="true"><use href="#i-barril"/></svg><strong>Pequenos lotes</strong><span>Produção limitada</span></li>
-      <li class="revela"><svg width="34" height="34" aria-hidden="true"><use href="#i-folha"/></svg><strong>Ingredientes naturais</strong><span>Puro, sem corantes</span></li>
-      <li class="revela"><svg width="34" height="34" aria-hidden="true"><use href="#i-diamante"/></svg><strong>Feito com cuidado</strong><span>Para cada ocasião especial</span></li>
-    </ul>
+  <!-- 2. FAIXA -->
+  <div class="faixa" aria-hidden="true">
+    <p data-faixa="1">Whisky <i></i> Gelo <i></i> Laranja <i></i> Carvalho <i></i> Brinde <i></i> Whisky <i></i> Gelo <i></i> Laranja <i></i> Carvalho <i></i> Brinde <i></i> Whisky <i></i> Gelo <i></i> Laranja <i></i></p>
+  </div>
+
+  <!-- 3. POR QUE -->
+  <section class="porque creme" aria-labelledby="porque-titulo">
+    <div class="envelope">
+      <p class="rotulo revela">Por que Locomotiva</p>
+      <h2 class="titulo revela" id="porque-titulo">Cada gole tem <em>uma história</em> por trás</h2>
+      <ul class="porque__lista">
+        <li class="revela"><span class="icone"><svg width="26" height="26" aria-hidden="true"><use href="#i-barril"/></svg></span><strong>Pequenos lotes</strong><span>Cada barril acompanhado de perto.</span></li>
+        <li class="revela"><span class="icone"><svg width="26" height="26" aria-hidden="true"><use href="#i-chama"/></svg></span><strong>Barril tostado</strong><span>O fogo dá cor e caráter.</span></li>
+        <li class="revela"><span class="icone"><svg width="26" height="26" aria-hidden="true"><use href="#i-folha"/></svg></span><strong>Sem corantes</strong><span>A cor vem só da madeira.</span></li>
+        <li class="revela"><span class="icone"><svg width="26" height="26" aria-hidden="true"><use href="#i-brinde"/></svg></span><strong>Feito para dividir</strong><span>Melhor com boa companhia.</span></li>
+      </ul>
+    </div>
   </section>
 
-  <!-- COLEÇÃO -->
-  <section class="colecao envelope" id="colecao" aria-labelledby="colecao-titulo">
-    <div class="colecao__texto revela">
-      <p class="rotulo">Nossa coleção assinatura</p>
-      <h2 class="titulo" id="colecao-titulo">Descubra nossos<br>melhores destilados</h2>
-      <p class="apoio">Do clássico encorpado ao defumado intenso: rótulos feitos em pequenos lotes para cada tipo de noite.</p>
-      <a class="botao botao--contorno" href="#categorias">Ver todas as categorias <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></a>
+  <!-- 4. COLEÇÃO -->
+  <section class="colecao creme" id="colecao" aria-labelledby="colecao-titulo">
+    <img class="flutua flutua--gelo2" data-flutua="-0.25" src="img/dec/gelo.webp" width="285" height="300" alt="" aria-hidden="true" loading="lazy">
+    <div class="envelope">
+      <div class="cabeca">
+        <div>
+          <p class="rotulo revela">A coleção</p>
+          <h2 class="titulo revela" id="colecao-titulo">Três garrafas, <em>três temperamentos</em></h2>
+        </div>
+        <p class="apoio revela">Do clássico encorpado ao defumado intenso. Escolha a garrafa que combina com a sua noite.</p>
+      </div>
+      <ul class="garrafas">
+        <li class="garrafa garrafa--caldeira revela">
+          <div class="garrafa__fundo"><img src="img/gar/caldeira.webp" srcset="img/gar/caldeira-m.webp 156w, img/gar/caldeira.webp 311w" sizes="(max-width: 700px) 30vw, 10vw" width="311" height="985" loading="lazy" alt="Garrafa Caldeira com rótulo vermelho e lacre de cera."></div>
+          <p class="garrafa__num">Nº 01</p>
+          <h3>Caldeira</h3>
+          <p>Encorpado e caloroso. Caramelo, carvalho e pimenta.</p>
+          <button class="botao botao--vermelho botao--p" type="button" data-produto="caldeira">Ver detalhes <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+        <li class="garrafa garrafa--fornalha revela">
+          <div class="garrafa__fundo"><img src="img/gar/fornalha.webp" srcset="img/gar/fornalha-m.webp 156w, img/gar/fornalha.webp 311w" sizes="(max-width: 700px) 30vw, 10vw" width="311" height="985" loading="lazy" alt="Garrafa Fornalha de vidro escuro, rótulo preto e lacre vermelho."></div>
+          <p class="garrafa__num">Nº 02</p>
+          <h3>Fornalha</h3>
+          <p>Defumado e seco. Turfa, cacau amargo e brasa.</p>
+          <button class="botao botao--vermelho botao--p" type="button" data-produto="fornalha">Ver detalhes <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+        <li class="garrafa garrafa--noturno revela">
+          <div class="garrafa__fundo"><img src="img/gar/noturno.webp" srcset="img/gar/noturno-m.webp 156w, img/gar/noturno.webp 311w" sizes="(max-width: 700px) 30vw, 10vw" width="311" height="985" loading="lazy" alt="Garrafa Noturno de vidro claro, rótulo creme e tampa metálica."></div>
+          <p class="garrafa__num">Nº 03</p>
+          <h3>Noturno</h3>
+          <p>Leve e dourado. Mel, baunilha e pera madura.</p>
+          <button class="botao botao--vermelho botao--p" type="button" data-produto="noturno">Ver detalhes <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+      </ul>
+      <div class="trio revela">
+        <img src="img/card-trio-m.webp" width="450" height="575" loading="lazy" alt="Trio de miniaturas Fornalha, Caldeira e Noturno.">
+        <div>
+          <p class="rotulo">Para provar</p>
+          <h3>Trio de miniaturas</h3>
+          <p>As três garrafas em 50 ml, para descobrir o seu temperamento favorito.</p>
+        </div>
+        <button class="botao botao--contorno-escuro botao--p" type="button" data-produto="trio">Ver o trio <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+      </div>
     </div>
-    <ul class="colecao__cards">
-      <li class="produto revela">
-        <img src="img/card-caldeira.webp" srcset="img/card-caldeira-m.webp 450w, img/card-caldeira.webp 900w" sizes="(max-width: 700px) 46vw, 17vw" width="900" height="1150" loading="lazy" alt="Garrafa Caldeira, rótulo vermelho e lacre de cera.">
-        <h3>Caldeira</h3><p>750 ml</p>
-        <button class="botao botao--mini" type="button" data-produto="caldeira">Ver detalhes</button>
-      </li>
-      <li class="produto revela">
-        <img src="img/card-fornalha.webp" srcset="img/card-fornalha-m.webp 450w, img/card-fornalha.webp 900w" sizes="(max-width: 700px) 46vw, 17vw" width="900" height="1150" loading="lazy" alt="Garrafa Fornalha de vidro escuro, rótulo preto e lacre vermelho.">
-        <h3>Fornalha</h3><p>750 ml</p>
-        <button class="botao botao--mini" type="button" data-produto="fornalha">Ver detalhes</button>
-      </li>
-      <li class="produto revela">
-        <img src="img/card-noturno.webp" srcset="img/card-noturno-m.webp 450w, img/card-noturno.webp 900w" sizes="(max-width: 700px) 46vw, 17vw" width="900" height="1150" loading="lazy" alt="Garrafa Noturno de vidro claro, rótulo creme e tampa metálica.">
-        <h3>Noturno</h3><p>750 ml</p>
-        <button class="botao botao--mini" type="button" data-produto="noturno">Ver detalhes</button>
-      </li>
-      <li class="produto revela">
-        <img src="img/card-trio.webp" srcset="img/card-trio-m.webp 450w, img/card-trio.webp 900w" sizes="(max-width: 700px) 46vw, 17vw" width="900" height="1150" loading="lazy" alt="Trio de miniaturas: Fornalha, Caldeira e Noturno.">
-        <h3>Trio de miniaturas</h3><p>3 × 50 ml</p>
-        <button class="botao botao--mini" type="button" data-produto="trio">Ver detalhes</button>
-      </li>
-    </ul>
   </section>
 
-  <!-- HERANÇA -->
-  <section class="heranca" id="heranca" aria-labelledby="heranca-titulo">
-    <img class="heranca__foto" src="img/alambique.webp" srcset="img/alambique-m.webp 800w, img/alambique.webp 1600w" sizes="(max-width: 900px) 100vw, 34vw" width="1600" height="1000" loading="lazy" alt="Dois alambiques de cobre martelado sobre base de tijolos, iluminados por luz âmbar.">
-    <div class="heranca__texto revela">
-      <p class="rotulo">Nossa herança</p>
-      <h2 class="titulo titulo--m" id="heranca-titulo">Nascida da tradição.<br>Aperfeiçoada com paixão.</h2>
-      <p class="apoio">A Locomotiva é mais do que uma marca: é a memória das estações onde o trem parava e a noite começava. Unimos alambiques de cobre, barris de carvalho e paciência para chegar a um sabor que fica.</p>
-      <button class="botao botao--contorno botao--p" type="button" data-artigo="historia">Conheça nossa história <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></button>
+  <!-- 5. RITUAL -->
+  <section class="ritual vermelho" id="ritual" aria-labelledby="ritual-titulo">
+    <svg class="onda onda--topo" aria-hidden="true"><use href="#onda"/></svg>
+    <div class="bolhas bolhas--ritual" data-flutua="-0.4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="envelope">
+      <p class="rotulo rotulo--claro revela">O ritual da dose perfeita</p>
+      <h2 class="titulo titulo--claro revela" id="ritual-titulo">Quatro passos, <em>nenhuma pressa</em></h2>
+      <ol class="ritual__passos">
+        <li class="revela"><span class="ritual__img"><img src="img/dec/gelo.webp" width="285" height="300" loading="lazy" alt=""></span><b>01</b><h3>Uma pedra grande</h3><p>Derrete devagar e não esconde o sabor.</p></li>
+        <li class="revela"><span class="ritual__img"><img src="img/servir/30.webp" width="720" height="760" loading="lazy" alt=""></span><b>02</b><h3>Uma dose generosa</h3><p>Cerca de 50 ml sobre o gelo.</p></li>
+        <li class="revela"><span class="ritual__img"><img src="img/dec/laranja.webp" width="297" height="300" loading="lazy" alt=""></span><b>03</b><h3>Casca de laranja</h3><p>Torça sobre o copo para perfumar.</p></li>
+        <li class="revela"><span class="ritual__img ritual__img--brinde"><img src="img/drink/old.webp" width="1000" height="1000" loading="lazy" alt=""></span><b>04</b><h3>Saúde!</h3><p>O primeiro gole é sempre devagar.</p></li>
+      </ol>
     </div>
-    <svg class="heranca__traco" viewBox="0 0 520 260" role="img" aria-label="Desenho em linha de uma locomotiva a vapor passando diante da destilaria">
-      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M0 222H520M0 232H520" />
-        <path d="M14 232V238M44 232V238M74 232V238M104 232V238M134 232V238M164 232V238M194 232V238M224 232V238M254 232V238M284 232V238M314 232V238M344 232V238M374 232V238M404 232V238M434 232V238M464 232V238M494 232V238" opacity=".6"/>
-        <path d="M300 222V120H420V222M300 120L360 84L420 120M318 222V176H344V222M372 150H400V176H372ZM330 140H348V158H330Z" opacity=".7"/>
-        <path d="M392 96V54H406V104" opacity=".7"/>
-        <path d="M399 50C392 40 402 34 396 24C392 16 400 8 410 6" opacity=".5"/>
-        <path d="M430 222V150H500V222M430 150L465 128L500 150M450 222V186H480V222" opacity=".55"/>
-        <path d="M0 196C40 180 80 186 120 176C170 164 210 172 250 160" opacity=".35"/>
-        <path d="M60 210H232V170C232 160 226 154 216 154H118V144H92V154H82V170H60Z"/>
-        <path d="M118 154V122H138V154M104 144V112C104 106 98 104 96 104H86C84 104 80 106 80 112V144M180 154V136H222V154M190 136V128H212V136"/>
-        <path d="M170 154V140M150 154V146"/>
-        <circle cx="96" cy="212" r="15"/><circle cx="96" cy="212" r="3"/><path d="M96 197V227M81 212H111M85.4 201.4L106.6 222.6M106.6 201.4L85.4 222.6"/>
-        <circle cx="140" cy="212" r="15"/><circle cx="140" cy="212" r="3"/><path d="M140 197V227M125 212H155M129.4 201.4L150.6 222.6M150.6 201.4L129.4 222.6"/>
-        <circle cx="196" cy="214" r="10"/><circle cx="196" cy="214" r="2.4"/>
-        <circle cx="70" cy="216" r="7"/>
-        <path d="M96 212H140" stroke-width="2"/>
-        <path d="M60 196L44 214H60"/>
-        <path d="M92 104C84 96 88 86 96 84C94 74 104 66 114 70C118 60 132 58 140 66C148 58 164 62 166 72C176 70 184 78 180 86" opacity=".75"/>
-        <path d="M150 60C156 50 170 50 176 58C184 52 198 56 198 66" opacity=".45"/>
-        <path d="M240 210H286V178H240ZM244 178V170H282V178M250 222H254M272 222H276"/><circle cx="252" cy="216" r="6"/><circle cx="274" cy="216" r="6"/>
-        <path d="M232 196H240"/>
+    <svg class="onda onda--base" aria-hidden="true"><use href="#onda"/></svg>
+  </section>
+
+  <!-- 6. DRINKS -->
+  <section class="drinks creme" id="drinks" aria-labelledby="drinks-titulo">
+    <img class="flutua flutua--laranja2" data-flutua="0.3" src="img/dec/laranja.webp" width="297" height="300" alt="" aria-hidden="true" loading="lazy">
+    <img class="flutua flutua--folha2" data-flutua="-0.2" src="img/dec/folha.webp" width="163" height="300" alt="" aria-hidden="true" loading="lazy">
+    <div class="envelope">
+      <div class="cabeca">
+        <div>
+          <p class="rotulo revela">Coquetéis da casa</p>
+          <h2 class="titulo revela" id="drinks-titulo">Três drinks para <em>abrir a noite</em></h2>
+        </div>
+        <p class="apoio revela">Receitas autorais, fáceis de fazer em casa, cada uma pensada para uma garrafa.</p>
+      </div>
+      <ul class="drinks__lista">
+        <li class="drink drink--old revela">
+          <div class="drink__img"><img src="img/drink/old.webp" srcset="img/drink/old-m.webp 500w, img/drink/old.webp 1000w" sizes="(max-width: 700px) 70vw, 24vw" width="1000" height="1000" loading="lazy" alt="Old Fashioned em copo baixo com gelo e rodela de laranja."></div>
+          <p class="drink__base">Com Caldeira</p>
+          <h3>Old Fashioned Locomotiva</h3>
+          <ul class="drink__ing"><li>Caldeira</li><li>Açúcar demerara</li><li>Bitter</li><li>Laranja</li></ul>
+          <button class="link" type="button" data-artigo="receitas">Ver preparo <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+        <li class="drink drink--brasa revela">
+          <div class="drink__img"><img src="img/drink/brasa.webp" srcset="img/drink/brasa-m.webp 500w, img/drink/brasa.webp 1000w" sizes="(max-width: 700px) 70vw, 24vw" width="1000" height="1000" loading="lazy" alt="Coquetel vermelho escuro em taça com casca de laranja."></div>
+          <p class="drink__base">Com Fornalha</p>
+          <h3>Brasa e Cacau</h3>
+          <ul class="drink__ing"><li>Fornalha</li><li>Vermute rosso</li><li>Licor de cacau</li></ul>
+          <button class="link" type="button" data-artigo="receitas">Ver preparo <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+        <li class="drink drink--estacao revela">
+          <div class="drink__img"><img src="img/drink/estacao.webp" srcset="img/drink/estacao-m.webp 500w, img/drink/estacao.webp 1000w" sizes="(max-width: 700px) 70vw, 24vw" width="1000" height="1000" loading="lazy" alt="Coquetel dourado e borbulhante em taça com raminho de folhas."></div>
+          <p class="drink__base">Com Noturno</p>
+          <h3>Última Estação</h3>
+          <ul class="drink__ing"><li>Noturno</li><li>Limão-siciliano</li><li>Mel</li><li>Espumante</li></ul>
+          <button class="link" type="button" data-artigo="receitas">Ver preparo <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. BRINDE -->
+  <section class="brinde" aria-labelledby="brinde-titulo">
+    <div class="brinde__img" data-flutua-img><img src="img/brinde.webp" srcset="img/brinde-m.webp 1100w, img/brinde.webp 2200w" sizes="100vw" width="2200" height="900" loading="lazy" alt="Duas taças brindando com gotas douradas espirrando."></div>
+    <div class="brinde__texto envelope revela">
+      <h2 class="brinde__titulo" id="brinde-titulo"><em>Saúde!</em></h2>
+      <p>Uma noite boa não se mede em horas. Mede-se em brindes.</p>
+    </div>
+  </section>
+
+  <!-- 8. HISTÓRIA -->
+  <section class="historia vinho" id="historia" aria-labelledby="historia-titulo">
+    <div class="envelope historia__grade">
+      <div class="historia__fotos revela">
+        <img class="historia__foto" src="img/alambique.webp" srcset="img/alambique-m.webp 800w, img/alambique.webp 1600w" sizes="(max-width: 860px) 92vw, 46vw" width="1600" height="1000" loading="lazy" alt="Dois alambiques de cobre martelado sob luz âmbar.">
+        <img class="historia__barril" src="img/madeira-m.webp" width="900" height="900" loading="lazy" alt="Tampo de barril de carvalho com a roda Locomotiva marcada a fogo.">
+      </div>
+      <div class="historia__texto">
+        <p class="rotulo rotulo--claro revela">Nossa história</p>
+        <h2 class="titulo titulo--claro revela" id="historia-titulo">Nascida na estação, <em>onde a noite começava</em></h2>
+        <p class="apoio apoio--claro revela">Toda cidade teve uma estação onde o trem parava e as pessoas se encontravam para conversar sem pressa. A Locomotiva nasceu dessa memória: alambique de cobre, barril de carvalho e tempo.</p>
+        <ul class="historia__selos revela">
+          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-chama"/></svg>Alambique de cobre</li>
+          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-barril"/></svg>Carvalho tostado</li>
+          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-roda"/></svg>Pequenos lotes</li>
+        </ul>
+        <button class="botao botao--creme botao--p revela" type="button" data-artigo="historia">Ler a história <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+      </div>
+    </div>
+    <svg class="historia__trem" viewBox="0 0 520 120" aria-hidden="true" data-trem>
+      <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M0 104H520M0 112H520" opacity=".5"/>
+        <path d="M60 92H232V52C232 42 226 36 216 36H118V26H92V36H82V52H60Z"/>
+        <path d="M118 36V8H138V36M180 36V18H222V36"/>
+        <circle cx="96" cy="94" r="13"/><circle cx="96" cy="94" r="2.5"/><circle cx="140" cy="94" r="13"/><circle cx="140" cy="94" r="2.5"/><circle cx="196" cy="96" r="9"/>
+        <path d="M96 94H140" stroke-width="2"/><path d="M60 78L44 96H60"/>
+        <path d="M240 92H300V60H240ZM320 92H380V60H320ZM232 80H240M300 80H320"/>
+        <circle cx="254" cy="96" r="6"/><circle cx="286" cy="96" r="6"/><circle cx="334" cy="96" r="6"/><circle cx="366" cy="96" r="6"/>
       </g>
     </svg>
   </section>
 
-  <!-- CATEGORIAS -->
-  <section class="categorias envelope" id="categorias" aria-labelledby="categorias-titulo">
-    <p class="rotulo revela">Explore por categoria</p>
-    <h2 class="titulo titulo--m revela" id="categorias-titulo">Encontre o destilado ideal</h2>
-    <ul class="categorias__lista">
-      <li class="categoria revela">
-        <img src="img/cat-classicos.webp" srcset="img/cat-classicos-m.webp 600w, img/cat-classicos.webp 1200w" sizes="(max-width: 700px) 92vw, 23vw" width="1200" height="820" loading="lazy" alt="Caldeira e copo com gelo e laranja sobre carvalho.">
-        <div><h3>Clássicos</h3><p>Encorpados, macios, memoráveis.</p><button class="link-ouro" type="button" data-produto="caldeira">Explorar <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button></div>
-      </li>
-      <li class="categoria revela">
-        <img src="img/cat-defumados.webp" srcset="img/cat-defumados-m.webp 600w, img/cat-defumados.webp 1200w" sizes="(max-width: 700px) 92vw, 23vw" width="1200" height="820" loading="lazy" alt="Fornalha com copo de gelo sob luz vermelha e fumaça.">
-        <div><h3>Defumados</h3><p>Intensos e de final longo.</p><button class="link-ouro" type="button" data-produto="fornalha">Explorar <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button></div>
-      </li>
-      <li class="categoria revela">
-        <img src="img/cat-coqueteis.webp" srcset="img/cat-coqueteis-m.webp 600w, img/cat-coqueteis.webp 1200w" sizes="(max-width: 700px) 92vw, 23vw" width="1200" height="820" loading="lazy" alt="Duas taças de coquetel e um copo baixo decorados com laranja.">
-        <div><h3>Coquetéis</h3><p>Receitas para celebrar.</p><button class="link-ouro" type="button" data-artigo="receitas">Explorar <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button></div>
-      </li>
-      <li class="categoria revela">
-        <img src="img/cat-presente.webp" srcset="img/cat-presente-m.webp 600w, img/cat-presente.webp 1200w" sizes="(max-width: 700px) 92vw, 23vw" width="1200" height="820" loading="lazy" alt="Caixa preta de presente com duas garrafas e tampa dourada com a roda Locomotiva.">
-        <div><h3>Kits para presente</h3><p>Para cada ocasião especial.</p><button class="link-ouro" type="button" data-produto="kit">Explorar <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button></div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- COQUETÉIS -->
-  <section class="coqueteis" id="coqueteis" aria-labelledby="coqueteis-titulo">
-    <img class="coqueteis__foto" src="img/brinde.webp" srcset="img/brinde-m.webp 1100w, img/brinde.webp 2200w" sizes="100vw" width="2200" height="900" loading="lazy" alt="Duas taças de coquetel brindando, com gotas douradas espirrando no escuro.">
-    <div class="coqueteis__texto revela">
-      <h2 class="titulo titulo--m" id="coqueteis-titulo">Coquetéis assinatura</h2>
-      <p>Receitas autorais. Momentos perfeitos.</p>
-      <button class="botao botao--contorno" type="button" data-artigo="receitas">Ver receitas <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></button>
-    </div>
-  </section>
-
-  <!-- HISTÓRIAS -->
-  <section class="historias envelope" id="historias" aria-labelledby="historias-titulo">
-    <div class="historias__cabeca revela">
-      <div>
-        <p class="rotulo">Histórias da destilaria</p>
-        <h2 class="titulo titulo--m" id="historias-titulo">Novidades e bastidores</h2>
+  <!-- 9. PRESENTES -->
+  <section class="presentes vermelho" id="presentes" aria-labelledby="presentes-titulo">
+    <div class="envelope presentes__grade">
+      <div class="presentes__texto">
+        <p class="rotulo rotulo--claro revela">Para presentear</p>
+        <h2 class="titulo titulo--claro revela" id="presentes-titulo">Um presente que <em>vira lembrança</em></h2>
+        <p class="apoio apoio--claro revela">Caixa de colecionador com interior de veludo vermelho, a roda Locomotiva gravada em dourado e cartão escrito à mão.</p>
+        <ul class="presentes__lista revela">
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-presente"/></svg>Escolha qualquer dupla de garrafas</li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-presente"/></svg>Kits para empresas e eventos</li>
+        </ul>
+        <div class="presentes__acoes revela">
+          <button class="botao botao--creme" type="button" data-produto="kit">Ver o kit <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+          <a class="botao botao--contorno-claro" href="#" data-whats="Olá! Quero montar um kit de presente Locomotiva."><svg width="16" height="16" aria-hidden="true"><use href="#i-whats"/></svg>Montar meu kit</a>
+        </div>
       </div>
-      <button class="botao botao--contorno botao--p" type="button" data-artigo="receitas">Ver receitas <svg width="14" height="14" aria-hidden="true"><use href="#i-seta"/></svg></button>
+      <figure class="presentes__img revela">
+        <img src="img/cat-presente.webp" srcset="img/cat-presente-m.webp 600w, img/cat-presente.webp 1200w" sizes="(max-width: 860px) 92vw, 48vw" width="1200" height="820" loading="lazy" alt="Caixa preta com duas garrafas e tampa dourada.">
+      </figure>
     </div>
-    <ul class="historias__lista">
-      <li class="historia revela">
-        <div class="historia__img"><img src="img/slide-fornalha-m.webp" width="1100" height="620" loading="lazy" alt="Fornalha e copo de gelo sob luz vermelha."><span class="selo">Lançamento</span></div>
-        <p class="historia__meta">Leitura de 3 min</p>
-        <h3>Conheça a Fornalha, nosso defumado de barril queimado</h3>
-        <button class="link-ouro" type="button" data-artigo="fornalha">Ler mais <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
-      </li>
-      <li class="historia revela">
-        <div class="historia__img"><img src="img/madeira-m.webp" width="900" height="900" loading="lazy" alt="Tampo de barril de carvalho com a roda Locomotiva marcada a fogo."><span class="selo">Bastidores</span></div>
-        <p class="historia__meta">Leitura de 4 min</p>
-        <h3>Do carvalho ao copo: por que queimamos nossos barris</h3>
-        <button class="link-ouro" type="button" data-artigo="barril">Ler mais <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
-      </li>
-      <li class="historia revela">
-        <div class="historia__img"><img src="img/copo-m.webp" width="900" height="700" loading="lazy" alt="Copo baixo com destilado âmbar e gelo contra a luz."><span class="selo">Receitas</span></div>
-        <p class="historia__meta">Leitura de 2 min</p>
-        <h3>Três coquetéis para fazer em casa com a Caldeira</h3>
-        <button class="link-ouro" type="button" data-artigo="receitas">Ler mais <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
-      </li>
-    </ul>
+  </section>
+
+  <!-- 10. HISTÓRIAS -->
+  <section class="leituras creme" aria-labelledby="leituras-titulo">
+    <div class="envelope">
+      <div class="cabeca">
+        <div>
+          <p class="rotulo revela">Do balcão da destilaria</p>
+          <h2 class="titulo revela" id="leituras-titulo">Histórias para ler <em>com um copo na mão</em></h2>
+        </div>
+      </div>
+      <ul class="leituras__lista">
+        <li class="leitura revela">
+          <div class="leitura__img"><img src="img/slide-fornalha-m.webp" width="1100" height="620" loading="lazy" alt="Fornalha e copo de gelo sob luz vermelha."><span class="etiqueta">Lançamento</span></div>
+          <p class="leitura__meta">Leitura de 3 min</p>
+          <h3>Conheça a Fornalha, nosso defumado de barril queimado</h3>
+          <button class="link" type="button" data-artigo="fornalha">Ler mais <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+        <li class="leitura revela">
+          <div class="leitura__img"><img src="img/madeira-m.webp" width="900" height="900" loading="lazy" alt="Tampo de barril de carvalho marcado a fogo."><span class="etiqueta">Bastidores</span></div>
+          <p class="leitura__meta">Leitura de 4 min</p>
+          <h3>Do carvalho ao copo: por que queimamos nossos barris</h3>
+          <button class="link" type="button" data-artigo="barril">Ler mais <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+        <li class="leitura revela">
+          <div class="leitura__img"><img src="img/slide-noturno-m.webp" width="1100" height="620" loading="lazy" alt="Noturno ao lado de uma taça dourada."><span class="etiqueta">Como servir</span></div>
+          <p class="leitura__meta">Leitura de 2 min</p>
+          <h3>Gelo, temperatura e copo: o guia da dose perfeita</h3>
+          <button class="link" type="button" data-artigo="servir">Ler mais <svg width="13" height="13" aria-hidden="true"><use href="#i-seta"/></svg></button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11. CHAMADA FINAL -->
+  <section class="final vermelho" aria-labelledby="final-titulo">
+    <div class="bolhas bolhas--final" data-flutua="-0.4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="envelope final__grade">
+      <div class="final__garrafas" aria-hidden="true">
+        <img src="img/gar/fornalha.webp" width="311" height="985" loading="lazy" alt="" data-flutua="0.12">
+        <img src="img/gar/caldeira.webp" width="311" height="985" loading="lazy" alt="" data-flutua="-0.08">
+        <img src="img/gar/noturno.webp" width="311" height="985" loading="lazy" alt="" data-flutua="0.16">
+      </div>
+      <div class="final__texto revela">
+        <h2 class="titulo titulo--claro" id="final-titulo">Sua próxima dose <em>começa aqui</em></h2>
+        <p class="apoio apoio--claro">Tire dúvidas, consulte disponibilidade e monte seu kit direto com a gente.</p>
+        <a class="botao botao--creme" href="#" data-whats="Olá! Vim pelo site da Locomotiva e quero conhecer os destilados."><svg width="18" height="18" aria-hidden="true"><use href="#i-whats"/></svg>Chamar no WhatsApp</a>
+      </div>
+    </div>
   </section>
 
 </main>
 
 <footer class="rodape">
-  <div class="rodape__grade envelope">
-    <a class="marca marca--rodape" href="#inicio" aria-label="Locomotiva, voltar ao início">
-      <svg class="marca__brasao" width="56" height="56" aria-hidden="true"><use href="#i-brasao"/></svg>
-      <span class="marca__nome">Locomotiva<small>Destilaria</small></span>
-    </a>
-    <nav aria-label="Coleção"><h2>Coleção</h2><button type="button" data-produto="caldeira">Caldeira</button><button type="button" data-produto="fornalha">Fornalha</button><button type="button" data-produto="noturno">Noturno</button><button type="button" data-produto="kit">Kits para presente</button></nav>
-    <nav aria-label="A destilaria"><h2>A destilaria</h2><button type="button" data-artigo="historia">Nossa história</button><button type="button" data-artigo="barril">Nossos barris</button><a href="#coqueteis">Coquetéis</a><a href="#historias">Histórias</a></nav>
-    <nav aria-label="Ajuda"><h2>Ajuda</h2><button type="button" data-artigo="servir">Como servir</button><button type="button" data-artigo="presente">Presentes corporativos</button><button type="button" data-artigo="moderacao">Consumo responsável</button></nav>
-    <div class="rodape__contato"><h2>Fale conosco</h2><a class="botao botao--whats" href="#" data-whats="Olá! Vim pelo site da Locomotiva e quero saber mais sobre os destilados."><svg width="18" height="18" aria-hidden="true"><use href="#i-whats"/></svg>Chamar no WhatsApp</a></div>
+  <div class="envelope rodape__grade">
+    <div>
+      <a class="marca" href="#inicio" aria-label="Locomotiva, voltar ao início"><svg width="30" height="30" aria-hidden="true"><use href="#i-roda"/></svg><span>Locomotiva</span></a>
+      <p class="rodape__frase">Destilados feitos com fogo, carvalho e tempo.</p>
+    </div>
+    <nav aria-label="Coleção"><h2>Coleção</h2><button type="button" data-produto="caldeira">Caldeira</button><button type="button" data-produto="fornalha">Fornalha</button><button type="button" data-produto="noturno">Noturno</button><button type="button" data-produto="trio">Trio de miniaturas</button></nav>
+    <nav aria-label="Destilaria"><h2>Destilaria</h2><button type="button" data-artigo="historia">Nossa história</button><button type="button" data-artigo="barril">Nossos barris</button><button type="button" data-artigo="receitas">Receitas</button><button type="button" data-artigo="servir">Como servir</button></nav>
+    <nav aria-label="Ajuda"><h2>Ajuda</h2><button type="button" data-artigo="presente">Presentes corporativos</button><button type="button" data-artigo="moderacao">Consumo responsável</button><a href="#" data-whats="Olá! Tenho uma dúvida sobre a Locomotiva.">Fale conosco</a></nav>
   </div>
-  <div class="rodape__base envelope">
+  <div class="envelope rodape__base">
     <p>Marca, produtos e textos fictícios. Projeto de portfólio.</p>
     <p>Beba com moderação. Venda proibida para menores de 18 anos.</p>
   </div>
 </footer>
 
-<!-- Janela de detalhes (produtos e artigos) -->
 <dialog class="janela" id="janela" aria-labelledby="janela-titulo">
   <div class="janela__corpo"></div>
   <button class="janela__fechar" type="button" aria-label="Fechar">×</button>
 </dialog>
 
-<!-- Confirmação de idade -->
 <dialog class="idade" id="idade" aria-labelledby="idade-titulo">
-  <svg width="64" height="64" aria-hidden="true" class="idade__brasao"><use href="#i-brasao"/></svg>
+  <svg width="54" height="54" aria-hidden="true" class="idade__icone"><use href="#i-roda"/></svg>
   <h2 id="idade-titulo">Bem-vindo à Locomotiva</h2>
   <p>Este site é sobre bebidas alcoólicas. Você tem 18 anos ou mais?</p>
   <div class="idade__acoes">
-    <button class="botao botao--ouro" type="button" data-idade="sim">Sim, tenho 18+</button>
-    <button class="botao botao--contorno" type="button" data-idade="nao">Não</button>
+    <button class="botao botao--vermelho" type="button" data-idade="sim">Sim, tenho 18+</button>
+    <button class="botao botao--contorno-escuro" type="button" data-idade="nao">Não</button>
   </div>
   <p class="idade__nota" hidden>Volte quando completar 18 anos. Obrigado pela visita.</p>
 </dialog>

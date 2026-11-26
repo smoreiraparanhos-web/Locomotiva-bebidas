@@ -2,13 +2,14 @@ Locomotiva · Destilados premium
 Marca, produtos e textos fictícios (projeto de portfólio). Todas as imagens foram renderizadas em 3D.
 
 ESTRUTURA
-index.html                  página única: abertura com 3 destaques, diferenciais, coleção, herança,
-                            categorias, coquetéis, histórias e rodapé
+index.html                  página única: abertura (garrafa servindo o copo ao rolar), faixa, por que,
+                            coleção, ritual, drinks, brinde, história, presentes, leituras, chamada final
 css/styles.css              cores, tipografia, seções e versão para celular
 js/config.js                número do WhatsApp (só dígitos, com 55 e DDD)
 js/modulos/conteudo.js      textos das fichas de produto e dos artigos (edite aqui)
 js/modulos/janela.js        abre fichas e artigos; monta os links de WhatsApp
-js/modulos/carrossel.js     troca dos destaques da abertura
+js/modulos/servir.js        animação da dose: 48 quadros (img/servir) desenhados conforme a rolagem
+js/modulos/rolagem.js       gelo, laranja, folhas, bolhas, faixa e trem que se movem só ao rolar
 js/modulos/topo.js          topo fixo, menu do celular, link ativo
 js/modulos/revela.js        entrada suave dos blocos ao rolar
 js/modulos/idade.js         confirmação de 18 anos na primeira visita
@@ -25,4 +26,6 @@ Depois troque o og:image do index.html pelo endereço completo da imagem
 (ex.: https://seusite.com/img/compartilhar.jpg).
 
 REFAZER IMAGENS (opcional)
-  cd ferramentas/render && npm install && npx playwright install chromium && npm run render
+  cd ferramentas/render && npm install && npx playwright install chromium
+  npm run render       (imagens com fundo)
+  npm run render:alfa  (quadros da animação, garrafas, drinks e decorações com fundo transparente)

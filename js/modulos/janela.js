@@ -11,23 +11,23 @@ const whats = '<svg width="18" height="18" aria-hidden="true"><use href="#i-what
 function ficha(p) {
   const msg = `Olá! Vim pelo site e quero saber mais sobre o ${p.nome}.`;
   return `<article class="ficha">
-    <img src="${p.foto}" alt="${p.nome}" width="900" height="1150">
+    <div class="ficha__img"${p.cheia ? ' style="padding:0"' : ` style="--cor:${p.cor}"`}><img src="${p.foto}" alt="${p.nome}"${p.cheia ? ' style="width:100%;height:100%;object-fit:cover"' : ''}></div>
     <div class="ficha__texto">
       <p class="rotulo">${p.linha}</p>
       <h2 class="titulo" id="janela-titulo">${p.nome}</h2>
       <p>${p.texto}</p>
       <dl class="ficha__dados">${p.dados.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
       <ul class="ficha__notas" aria-label="Notas">${p.notas.map((n) => `<li>${n}</li>`).join('')}</ul>
-      <p><strong style="color:var(--ouro);font-weight:600">Como servir:</strong> ${p.servir}</p>
-      <a class="botao botao--ouro" href="${linkWhats(msg)}" target="_blank" rel="noopener">${whats} Consultar disponibilidade</a>
+      <p><strong style="color:var(--vermelho);font-weight:600">Como servir:</strong> ${p.servir}</p>
+      <a class="botao botao--vermelho" href="${linkWhats(msg)}" target="_blank" rel="noopener">${whats} Consultar disponibilidade</a>
     </div>
   </article>`;
 }
 
 function artigo(a) {
-  const extra = a.whats ? `<p style="margin-top:2rem"><a class="botao botao--ouro" href="${linkWhats(a.whats)}" target="_blank" rel="noopener">${whats} Falar no WhatsApp</a></p>` : '';
+  const extra = a.whats ? `<p style="margin-top:2rem"><a class="botao botao--vermelho" href="${linkWhats(a.whats)}" target="_blank" rel="noopener">${whats} Falar no WhatsApp</a></p>` : '';
   return `<article class="artigo"><p class="rotulo">Locomotiva</p><h2 class="titulo titulo--m" id="janela-titulo">${a.titulo}</h2>${a.corpo}${extra}
-    <p style="margin-top:2.2rem"><a class="link-ouro" href="#colecao" data-fechar>Ver a coleção ${seta}</a></p></article>`;
+    <p style="margin-top:2.2rem"><a class="link" href="#colecao" data-fechar>Ver a coleção ${seta}</a></p></article>`;
 }
 
 export function iniciarJanelas() {
