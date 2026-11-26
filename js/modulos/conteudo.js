@@ -2,35 +2,35 @@
 
 export const PRODUTOS = {
   caldeira: {
-    nome: 'Caldeira', linha: 'Nº 01 · O clássico da casa', foto: 'img/card-caldeira.webp',
+    nome: 'Caldeira', linha: 'Nº 01 · O clássico da casa', foto: 'img/gar/caldeira.webp', cor: 'radial-gradient(circle at 50% 40%, #e0353a, #9e1520)',
     texto: 'Malte envelhecido em carvalho tostado. Encorpado e caloroso, com doçura de caramelo e um final apimentado. A primeira dose da noite.',
     dados: [['Volume', '750 ml'], ['Teor', '40% vol.'], ['Barril', 'Carvalho tostado']],
     notas: ['Caramelo queimado', 'Carvalho', 'Pimenta-do-reino', 'Casca de laranja'],
     servir: 'Puro, com uma pedra grande de gelo ou em um Old Fashioned com casca de laranja.',
   },
   fornalha: {
-    nome: 'Fornalha', linha: 'Nº 02 · Defumado de barril queimado', foto: 'img/card-fornalha.webp',
+    nome: 'Fornalha', linha: 'Nº 02 · Defumado de barril queimado', foto: 'img/gar/fornalha.webp', cor: 'radial-gradient(circle at 50% 40%, #5c1418, #22080a)',
     texto: 'Vidro escuro, barril queimado por dentro até virar brasa. Defumado, seco e de final longo, para quem procura intensidade.',
     dados: [['Volume', '750 ml'], ['Teor', '43% vol.'], ['Barril', 'Queima intensa']],
     notas: ['Turfa', 'Cacau amargo', 'Brasa', 'Couro'],
     servir: 'Puro em copo baixo ou com algumas gotas de água para abrir os aromas.',
   },
   noturno: {
-    nome: 'Noturno', linha: 'Nº 03 · Barril único', foto: 'img/card-noturno.webp',
+    nome: 'Noturno', linha: 'Nº 03 · Barril único', foto: 'img/gar/noturno.webp', cor: 'radial-gradient(circle at 50% 40%, #f3c27a, #d08a32)',
     texto: 'Engarrafado à mão, um barril por vez. Mais leve e mais claro, com mel, baunilha e fruta madura. Para a última conversa da mesa.',
     dados: [['Volume', '750 ml'], ['Teor', '41% vol.'], ['Barril', 'Único, numerado']],
     notas: ['Mel', 'Baunilha', 'Pera madura', 'Amêndoas'],
     servir: 'Em taça, levemente resfriado, ou como base de um coquetel com espumante.',
   },
   trio: {
-    nome: 'Trio de miniaturas', linha: 'Caldeira, Fornalha e Noturno', foto: 'img/card-trio.webp',
+    nome: 'Trio de miniaturas', linha: 'Caldeira, Fornalha e Noturno', foto: 'img/card-trio.webp', cheia: true,
     texto: 'As três garrafas da coleção em miniatura, para provar lado a lado e descobrir o seu temperamento favorito.',
     dados: [['Volume', '3 × 50 ml'], ['Ideal para', 'Degustação'], ['Inclui', 'Guia de prova']],
     notas: ['Clássico', 'Defumado', 'Barril único'],
     servir: 'Do mais leve ao mais intenso: Noturno, Caldeira e, por último, Fornalha.',
   },
   kit: {
-    nome: 'Kit para presente', linha: 'Caixa preta com detalhes dourados', foto: 'img/cat-presente.webp',
+    nome: 'Kit para presente', linha: 'Caixa preta com detalhes dourados', foto: 'img/cat-presente.webp', cheia: true,
     texto: 'Duas garrafas na caixa de colecionador, com interior de veludo vermelho e a roda Locomotiva gravada em dourado na tampa.',
     dados: [['Garrafas', '2 × 750 ml'], ['Escolha', 'Qualquer dupla'], ['Inclui', 'Cartão escrito à mão']],
     notas: ['Aniversários', 'Datas especiais', 'Presentes corporativos'],

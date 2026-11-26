@@ -166,7 +166,7 @@ export function garrafa(tipo = 'caldeira') {
 }
 
 /* ---------- Copo baixo com gelo ---------- */
-export function copo({ liq = true, gelos = 3 } = {}) {
+export function copo({ liq = true, gelos = 3, nivel: nivelLiq = 4.6, deslocGelo = 0 } = {}) {
   const g = new THREE.Group();
   const ext = suavizar([[0, 0], [3.9, 0], [4.15, 0.25], [4.2, 0.8], [4.35, 9.0], [4.3, 9.15], [4.12, 9.1], [4.0, 8.9], [3.86, 1.6], [3.4, 1.4], [0, 1.45]], 2);
   const m = new THREE.MeshPhysicalMaterial({ color: '#ffffff', roughness: 0.02, metalness: 0, transparent: true, opacity: 1, envMapIntensity: 1.6, specularIntensity: 1, ior: 1.5 });
@@ -183,8 +183,8 @@ export function copo({ liq = true, gelos = 3 } = {}) {
   g.add(vid);
   const fundo = new THREE.Mesh(lathe([[0, 0.02], [3.85, 0.02], [3.85, 1.35], [0, 1.4]], 120), vidro({ cor: '#ffffff', atenua: '#fff1df', dist: 20 }));
   g.add(fundo);
-  if (liq) {
-    const nivel = 4.6;
+  if (liq && nivelLiq > 1.6) {
+    const nivel = nivelLiq;
     const l = new THREE.Mesh(lathe([[0, 1.5], [3.84, 1.5], [3.9, nivel], [0, nivel]], 160), liquido({ cor: '#3a1404', borda: '#e0852c', forca: 0.9, centro: 0.06 }));
     g.add(l);
   }
@@ -204,7 +204,7 @@ export function copo({ liq = true, gelos = 3 } = {}) {
     const [x, y, z, a, b, c] = posicoes[i];
     const cubo = new THREE.Mesh(new RoundedBoxGeometry(2.7, 2.6, 2.6, 6, 0.42), matGelo);
     cubo.renderOrder = 4;
-    cubo.position.set(x, y, z); cubo.rotation.set(a, b, c);
+    cubo.position.set(x, y + deslocGelo, z); cubo.rotation.set(a, b, c);
     g.add(cubo);
   }
   g.traverse((o) => { if (o.isMesh) o.castShadow = true; });

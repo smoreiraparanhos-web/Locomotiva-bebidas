@@ -3,7 +3,8 @@
   "private": true,
   "description": "Gera as imagens do site (garrafas e cenas) com three.js em um navegador headless.",
   "scripts": {
-    "render": "node rodar.cjs slideCaldeira,slideFornalha,slideNoturno,cardCaldeira,cardFornalha,cardNoturno,cardTrio,catClassicos,catDefumados,catCoqueteis,catPresente,brinde,alambique,copo,madeira 1"
+    "render": "node rodar.cjs alambique,brinde,catPresente,cardTrio,slideFornalha,slideNoturno,madeira 1",
+    "render:alfa": "node rodar.cjs servir:0-47,garCaldeira,garFornalha,garNoturno,drinkOld,drinkBrasa,drinkEstacao,decGelo,decLaranja,decFolha 1 a"
   },
   "dependencies": {
     "three": "0.170.0"

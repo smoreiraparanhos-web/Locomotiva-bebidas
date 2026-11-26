@@ -7,16 +7,18 @@ const srv = http.createServer((q, r) => { const f = path.join(raiz, decodeURICom
   const b = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
   const nomes = process.argv[2].split(','); const esc = process.argv[3] || '1'; const alfa = process.argv[4] === 'a';
   fs.mkdirSync(path.join(raiz, 'saida'), { recursive: true });
-  for (const n of nomes) {
+  const lista = [];
+  for (const n of nomes) { const m = n.match(/^(\w+):(\d+)-(\d+)$/); if (m) { for (let f = +m[2]; f <= +m[3]; f++) lista.push([m[1], f]); } else lista.push([n, null]); }
+  for (const [n, f] of lista) {
     const t0 = Date.now();
     const p = await b.newPage();
     p.on('console', m => { if (m.type() === 'error' || m.type()==='warning') console.log(n, m.type(), m.text().slice(0, 300)); });
     p.on('pageerror', e => console.log(n, 'ERRO', e.message));
-    await p.goto(`http://localhost:8765/render.html?t=${n}&s=${esc}${alfa ? '&a=1' : ''}`);
+    await p.goto(`http://localhost:8765/render.html?t=${n}&s=${esc}${alfa ? '&a=1' : ''}${f !== null ? '&f=' + f : ''}`);
     await p.waitForFunction(() => window.__pronto, null, { timeout: 600000 });
     const url = await p.evaluate(() => window.__pronto);
-    fs.writeFileSync(path.join(raiz, 'saida', `${n}${alfa ? '-a' : ''}.png`), Buffer.from(url.split(',')[1], 'base64'));
-    console.log(n, ((Date.now() - t0) / 1000).toFixed(1) + 's');
+    fs.writeFileSync(path.join(raiz, 'saida', `${n}${f !== null ? '-' + String(f).padStart(2, '0') : ''}${alfa ? '-a' : ''}.png`), Buffer.from(url.split(',')[1], 'base64'));
+    if (f === null || f % 10 === 0) console.log(n, f ?? '', ((Date.now() - t0) / 1000).toFixed(1) + 's');
     await p.close();
   }
   await b.close(); srv.close();
