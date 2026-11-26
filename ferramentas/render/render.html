@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=block">
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<style>html,body{margin:0;background:#000}</style></head><body>
+<script type="module">
+import { THREE } from './cena.js';
+import { TOMADAS as T1 } from './tomadas.js';
+import { TOMADAS2 } from './tomadas2.js';
+const TOMADAS = { ...T1, ...TOMADAS2 };
+const q = new URLSearchParams(location.search);
+const nome = q.get('t'); const esc = +(q.get('s') || 1); const alfa = q.get('a') === '1';
+await Promise.all(['900 120px "Bodoni Moda"','600 44px "Archivo"','900 40px "Bodoni Moda"','italic 500 40px "Bodoni Moda"','800 40px "Archivo"','600 40px "Archivo"','700 40px "Archivo"'].map(f=>document.fonts.load(f)));
+const t = TOMADAS[nome];
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: alfa, premultipliedAlpha: false });
+renderer.setPixelRatio(1);
+renderer.setSize(Math.round(t.w*esc), Math.round(t.h*esc));
+renderer.toneMapping = THREE.NeutralToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.VSMShadowMap;
+const scene = new THREE.Scene();
+if (alfa) renderer.setClearColor(0x000000, 0); else scene.background = new THREE.Color(t.fundo);
+const cam = t.montar(scene, renderer, alfa);
+renderer.render(scene, cam);
+renderer.render(scene, cam);
+document.body.appendChild(renderer.domElement);
+window.__pronto = renderer.domElement.toDataURL('image/png');
+</script></body></html>

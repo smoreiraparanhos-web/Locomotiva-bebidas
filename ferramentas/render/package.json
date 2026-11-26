@@ -1,0 +1,14 @@
+{
+  "name": "locomotiva-render",
+  "private": true,
+  "description": "Gera as imagens do site (garrafas e cenas) com three.js em um navegador headless.",
+  "scripts": {
+    "render": "node rodar.cjs slideCaldeira,slideFornalha,slideNoturno,cardCaldeira,cardFornalha,cardNoturno,cardTrio,catClassicos,catDefumados,catCoqueteis,catPresente,brinde,alambique,copo,madeira 1"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}

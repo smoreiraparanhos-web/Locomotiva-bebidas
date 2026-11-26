@@ -1,0 +1,28 @@
+Locomotiva · Destilados premium
+Marca, produtos e textos fictícios (projeto de portfólio). Todas as imagens foram renderizadas em 3D.
+
+ESTRUTURA
+index.html                  página única: abertura com 3 destaques, diferenciais, coleção, herança,
+                            categorias, coquetéis, histórias e rodapé
+css/styles.css              cores, tipografia, seções e versão para celular
+js/config.js                número do WhatsApp (só dígitos, com 55 e DDD)
+js/modulos/conteudo.js      textos das fichas de produto e dos artigos (edite aqui)
+js/modulos/janela.js        abre fichas e artigos; monta os links de WhatsApp
+js/modulos/carrossel.js     troca dos destaques da abertura
+js/modulos/topo.js          topo fixo, menu do celular, link ativo
+js/modulos/revela.js        entrada suave dos blocos ao rolar
+js/modulos/idade.js         confirmação de 18 anos na primeira visita
+img/                        imagens WebP (inteira e versão -m para celular)
+ferramentas/render/         cena 3D (three.js) que gerou as imagens
+
+TESTAR
+  python3 -m http.server
+e abra http://localhost:8000
+
+PUBLICAR
+Envie a pasta inteira para GitHub Pages, Netlify ou outra hospedagem estática.
+Depois troque o og:image do index.html pelo endereço completo da imagem
+(ex.: https://seusite.com/img/compartilhar.jpg).
+
+REFAZER IMAGENS (opcional)
+  cd ferramentas/render && npm install && npx playwright install chromium && npm run render
